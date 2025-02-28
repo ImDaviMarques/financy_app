@@ -1,3 +1,4 @@
+import 'package:financy_app/common/themes/defaut_theme.dart';
 import 'package:financy_app/features/sign_up/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: defaultTheme,
       home: SignUpPage(),
     );
   }
