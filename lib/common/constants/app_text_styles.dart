@@ -26,4 +26,6 @@ class AppTextStyles {
     fontSize: 18.0,
     fontWeight: FontWeight.w600,
   );
+
+  static var inputLabelText;
 }

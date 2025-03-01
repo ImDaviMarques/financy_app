@@ -42,7 +42,7 @@ class OnboardingPage extends StatelessWidget {
             children: [
               Text(
                 'Already have an account? ',
-                style: AppTextStyles.smallText.copyWith(color: AppColors.grey),
+                style: AppTextStyles.smallText.copyWith(color: AppColors.darkGrey),
               ),
               Text(
                 'Log In',
