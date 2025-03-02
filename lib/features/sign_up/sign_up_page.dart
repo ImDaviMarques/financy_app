@@ -53,21 +53,41 @@ class _SignUpPageState extends State<SignUpPage> {
                     UpperCaseTextInputFormatter(),
                   ],
                   validator: (value) {
-                    print(value);
+                    if (value != null && value.isEmpty) {
+                      return 'Esse campo não pode ser vazio';
+                    }
                     return null;
                   },
                 ),
                 CustomTextFormField(
                   labelText: "your email",
                   hintText: "john@email.com",
+                  validator: (value) {
+                    if (value != null && value.isEmpty) {
+                      return 'Esse campo não pode ser vazio';
+                    }
+                    return null;
+                  },
                 ),
                 PasswordFormField(
                   labelText: "choose your password",
                   hintText: "********",
+                  validator: (value) {
+                    if (value != null && value.isEmpty) {
+                      return 'Esse campo não pode ser vazio';
+                    }
+                    return null;
+                  },
                 ),
                 PasswordFormField(
                   labelText: "confirm your password",
                   hintText: "********",
+                  validator: (value) {
+                    if (value != null && value.isEmpty) {
+                      return 'Esse campo não pode ser vazio';
+                    }
+                    return null;
+                  },
                 )
               ],
             )),
@@ -77,12 +97,15 @@ class _SignUpPageState extends State<SignUpPage> {
           child: PrimaryButton(
             text: 'Sign Up',
             onPressed: () {
-              final valid = _formKey.currentState!.validate();
-              log(valid.toString());
-            },
+              final valid = _formKey.currentState != null && _formKey.currentState!.validate();
+              if (valid) {
+                log("continuar lógica de login");
+                } else {
+                  log("Erro ao logar");
+                }
+              },
+            ),
           ),
-        ),
-        const SizedBox(height: 16.0),
         MultiTextButton(
           onPressed: () => log('tap'),
           children: [
