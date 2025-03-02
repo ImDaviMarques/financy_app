@@ -27,5 +27,6 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  // ignore: prefer_typing_uninitialized_variables
   static var inputLabelText;
 }

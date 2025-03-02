@@ -4,6 +4,7 @@ import 'package:financy_app/common/constants/app_colors.dart';
 import 'package:financy_app/common/constants/app_text_styles.dart';
 import 'package:financy_app/common/widgets/custom_text_form_field.dart';
 import 'package:financy_app/common/widgets/multi_text_button.dart';
+import 'package:financy_app/common/widgets/password_form_field.dart';
 import 'package:financy_app/features/onboarding/onboarding_page.dart';
 
 import 'package:flutter/material.dart';
@@ -40,6 +41,14 @@ class SignUpPage extends StatelessWidget {
               labelText: "your name",
               hintText: "John Doe",
               padding: null,
+            ),
+            PasswordFormField(
+              labelText: "choose your password",
+              hintText: "********",
+            ),
+            PasswordFormField(
+              labelText: "confirm your password",
+              hintText: "********",
             )
           ],
         )),
@@ -70,5 +79,3 @@ class SignUpPage extends StatelessWidget {
     ));
   }
 }
-
-
