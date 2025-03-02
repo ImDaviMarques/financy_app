@@ -47,7 +47,7 @@ class OnboardingPage extends StatelessWidget {
               Text(
                 'Log In',
                 style: AppTextStyles.smallText
-                    .copyWith(color: AppColors.greelightTwo),
+                    .copyWith(color: AppColors.greenTwo),
               ),
             ],
           ),
@@ -60,7 +60,7 @@ class OnboardingPage extends StatelessWidget {
   Widget _buildTitleText(String text) {
     return Text(
       text,
-      style: AppTextStyles.mediumText.copyWith(color: AppColors.greelightTwo),
+      style: AppTextStyles.mediumText.copyWith(color: AppColors.greenTwo),
     );
   }
 }

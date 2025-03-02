@@ -5,7 +5,7 @@ final defaultTheme = ThemeData(
   inputDecorationTheme: InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: AppColors.greelightTwo,
+        color: AppColors.greenTwo,
       ),
     ),
   ),

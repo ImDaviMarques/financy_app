@@ -27,6 +27,15 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
-  // ignore: prefer_typing_uninitialized_variables
-  static var inputLabelText;
+  static const TextStyle inputText = TextStyle(
+    fontFamily: 'Inter',
+    fontSize: 14.0,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle inputHintText = TextStyle(
+    fontFamily: 'Inter',
+    fontSize: 12.0,
+    fontWeight: FontWeight.w400,
+  );
 }
